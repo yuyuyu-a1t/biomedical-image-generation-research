@@ -1,0 +1,56 @@
+paths:
+  data_root: data/LUNA16
+  processed_dir: data/processed_smoke
+  outputs_dir: outputs/smoke
+  checkpoints_dir: checkpoints/smoke
+  reports_dir: reports
+
+preprocess:
+  resolution: 64
+  hu_min: -1000.0
+  hu_max: 400.0
+  non_air_threshold_hu: -900.0
+  min_non_air_ratio: 0.08
+  lung_hu_low: -1000.0
+  lung_hu_high: -400.0
+  min_lung_ratio: 0.03
+  slice_stride: 4
+  split_ratios: [0.8, 0.1, 0.1]
+  max_scans: 2
+  max_slices_per_scan: 80
+
+model:
+  in_channels: 1
+  base_channels: 32
+  time_embedding_dim: 128
+  dropout: 0.05
+
+diffusion:
+  train_timesteps: 1000
+  beta_start: 0.0001
+  beta_end: 0.02
+  sampling_method: ddim
+  sampling_steps: 20
+  ddim_eta: 0.0
+
+train:
+  seed: 42
+  batch_size: 16
+  num_workers: 4
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  max_steps: 200
+  max_train_slices: 1000
+  mixed_precision: true
+  gradient_clip: 1.0
+  ema_decay: 0.99
+  log_every: 10
+  save_every: 100
+  sample_every: 100
+  sample_count: 16
+  resume: null
+
+evaluate:
+  generated_count: 16
+  nearest_neighbor_candidates: 1000
+  histogram_bins: 100

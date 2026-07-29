@@ -1,0 +1,57 @@
+{
+  "checkpoint_step": 10000,
+  "seed": 42,
+  "same_initial_noise": true,
+  "initial_noise_sha256": "6feafd2d5e94b989882907afff4641bb9b10fe335aa83fc73efc97ef97961835",
+  "eta": 0.0,
+  "count": 16,
+  "resolution": 128,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "timings_seconds": {
+    "50": 0.9103143913671374,
+    "100": 1.1790788602083921,
+    "200": 2.353473731316626
+  },
+  "seconds_per_image": {
+    "50": 0.05689464946044609,
+    "100": 0.07369242876302451,
+    "200": 0.14709210820728913
+  },
+  "image_statistics": {
+    "50": {
+      "pixel_mean": -0.1885337233543396,
+      "pixel_std": 0.6265979409217834,
+      "mean_absolute_gradient": 0.06041005253791809,
+      "mean_absolute_laplacian": 0.13379302620887756
+    },
+    "100": {
+      "pixel_mean": -0.149794340133667,
+      "pixel_std": 0.6166221499443054,
+      "mean_absolute_gradient": 0.06561225652694702,
+      "mean_absolute_laplacian": 0.14761440455913544
+    },
+    "200": {
+      "pixel_mean": -0.1185867190361023,
+      "pixel_std": 0.6033287644386292,
+      "mean_absolute_gradient": 0.0695602148771286,
+      "mean_absolute_laplacian": 0.15994271636009216
+    }
+  },
+  "pairwise_output_differences": {
+    "50_vs_100": {
+      "mean_absolute_difference": 0.0795828178524971,
+      "mean_squared_difference": 0.053397469222545624
+    },
+    "100_vs_200": {
+      "mean_absolute_difference": 0.07491719722747803,
+      "mean_squared_difference": 0.04626087099313736
+    }
+  },
+  "comparison_indices_zero_based": [
+    0,
+    5,
+    10,
+    15
+  ]
+}

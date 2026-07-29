@@ -1,0 +1,71 @@
+# LUNA16 raw data and generated slice arrays
+data/raw/
+data/LUNA16/
+data/processed/
+data/processed_improved_128/
+luna16_2d_ct_generation/data/raw/
+luna16_2d_ct_generation/data/LUNA16/
+luna16_2d_ct_generation/data/processed/
+luna16_2d_ct_generation/data/processed_improved_128/
+**/*.mhd
+**/*.raw
+**/*.npy
+**/*.zip
+
+# Python and test caches
+**/__pycache__/
+**pycache**/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Logs and experiment caches
+logs/**/*.log
+luna16_2d_ct_generation/logs/**/*.log
+luna16_2d_ct_generation/outputs/preprocess_full.log
+tensorboard/
+outputs/**/smoke/
+luna16_2d_ct_generation/outputs/**/smoke/
+outputs/**/samples_step_*.png
+luna16_2d_ct_generation/outputs/**/samples_step_*.png
+
+# Publish only representative, non-identifying experiment artifacts.
+luna16_2d_ct_generation/outputs/*
+!luna16_2d_ct_generation/outputs/baseline_vs_improved.png
+!luna16_2d_ct_generation/outputs/generated_samples.png
+!luna16_2d_ct_generation/outputs/training_loss.png
+!luna16_2d_ct_generation/outputs/nearest_neighbors.png
+!luna16_2d_ct_generation/outputs/failure_cases.png
+!luna16_2d_ct_generation/outputs/real_vs_generated_histogram.png
+!luna16_2d_ct_generation/outputs/evaluation_metrics.json
+!luna16_2d_ct_generation/outputs/improved_128/
+luna16_2d_ct_generation/outputs/improved_128/*
+!luna16_2d_ct_generation/outputs/improved_128/generated_samples.png
+!luna16_2d_ct_generation/outputs/improved_128/training_loss.png
+!luna16_2d_ct_generation/outputs/improved_128/sampling_steps_comparison.png
+!luna16_2d_ct_generation/outputs/improved_128/nearest_neighbors.png
+!luna16_2d_ct_generation/outputs/improved_128/failure_cases.png
+!luna16_2d_ct_generation/outputs/improved_128/evaluation_metrics.json
+!luna16_2d_ct_generation/outputs/improved_128/sampling_steps_metrics.json
+
+# Local experiment planning notes and generated indices are not published.
+luna16_2d_ct_generation/plan/
+
+# Model weights: final files exceed GitHub's 100 MB file limit.
+# Publish separately as Release assets or configure Git LFS first.
+checkpoints/**/*.pt
+luna16_2d_ct_generation/checkpoints/**/*.pt
+checkpoints/**/step_*.pt
+checkpoints/**/smoke/
+
+# Secrets and local connection helpers
+.env
+*.pem
+ssh_askpass*
+*ssh_askpass*
+
+# Temporary/editor files
+*.tmp
+*.temp
+*.swp
+*~

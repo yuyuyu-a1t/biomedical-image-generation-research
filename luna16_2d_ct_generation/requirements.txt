@@ -1,0 +1,9 @@
+# PyTorch/torchvision/CUDA are runtime prerequisites and intentionally omitted.
+# Use the preinstalled PyTorch/CUDA environment when available; do not upgrade them unnecessarily.
+SimpleITK>=2.3
+numpy>=1.24
+PyYAML>=6.0
+matplotlib>=3.7
+Pillow>=10.0
+tqdm>=4.66
+

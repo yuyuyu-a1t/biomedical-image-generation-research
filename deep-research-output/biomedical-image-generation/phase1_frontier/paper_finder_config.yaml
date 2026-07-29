@@ -1,0 +1,11 @@
+searches:
+  - query: "biomedical medical image synthesis generation diffusion"
+    num_results: 50
+    venues:
+      neurips: [2025]
+      icml: [2025]
+      iclr: [2025, 2026]
+      cvpr: [2025, 2026]
+output:
+  root: "deep-research-output/biomedical-image-generation/phase1_frontier/search_results"
+  overwrite: true

@@ -1,0 +1,13 @@
+searches:
+  - query: "medical image synthesis GAN VAE diffusion autoregressive flow"
+    num_results: 100
+    venues:
+      neurips: [2023, 2024, 2025]
+      icml: [2023, 2024, 2025]
+      iclr: [2023, 2024, 2025, 2026]
+      cvpr: [2023, 2024, 2025, 2026]
+      iccv: [2023, 2025]
+      eccv: [2024]
+output:
+  root: "deep-research-output/biomedical-image-generation/phase2_survey/search_results"
+  overwrite: true
