@@ -70,7 +70,7 @@ DDPM 的标准训练过程在随机时间步向真实图像添加高斯噪声，
 
 脚本验证了三个集合的 seriesuid 交集为空，抽查预处理数组尺寸均为 `64×64`。
 
-![随机测试集真实切片](../outputs/real_samples.png)
+![Baseline 与 improved 生成结果对比](../outputs/baseline_vs_improved.png)
 
 ## 6. DDPM 的基本原理
 
@@ -214,4 +214,3 @@ DDPM 可以分成前向扩散和反向生成两个过程。
 本实验完成了真实 LUNA16 subset0 的下载、HU 预处理、seriesuid 级无泄漏划分、小型 2D DDPM 训练、EMA checkpoint、DDIM 采样以及灰度、多样性和最近邻评价。模型在 3000 个训练 step 后能够从随机噪声生成具有粗略胸部 CT 外观的 64×64 切片，证明了教学流程可以跑通。
 
 这一结论仅表示模型学习到了部分二维 CT 切片分布。实验没有验证病灶真实性、三维一致性或临床有效性，生成图不能用于任何临床诊断。
-

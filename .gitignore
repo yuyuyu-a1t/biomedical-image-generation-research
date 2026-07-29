@@ -36,6 +36,7 @@ luna16_2d_ct_generation/outputs/*
 !luna16_2d_ct_generation/outputs/training_loss.png
 !luna16_2d_ct_generation/outputs/nearest_neighbors.png
 !luna16_2d_ct_generation/outputs/failure_cases.png
+!luna16_2d_ct_generation/outputs/real_vs_generated_histogram.png
 !luna16_2d_ct_generation/outputs/evaluation_metrics.json
 !luna16_2d_ct_generation/outputs/improved_128/
 luna16_2d_ct_generation/outputs/improved_128/*

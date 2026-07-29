@@ -1,4 +1,4 @@
-﻿# PyTorch/torchvision/CUDA are runtime prerequisites and intentionally omitted.
+# PyTorch/torchvision/CUDA are runtime prerequisites and intentionally omitted.
 # Use the preinstalled PyTorch/CUDA environment when available; do not upgrade them unnecessarily.
 SimpleITK>=2.3
 numpy>=1.24

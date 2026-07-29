@@ -1,4 +1,4 @@
-﻿# LUNA16 二维 CT 扩散生成实验
+# LUNA16 二维 CT 扩散生成实验
 
 这是一个面向本科课程汇报的、可复现的二维肺部 CT 无条件生成项目。项目使用 LUNA16 `subset0` 的 89 个 CT 扫描，完成了：
 
@@ -266,6 +266,7 @@ python sampling_steps_experiment.py \
 - `.mhd` 与 `.raw` 必须成对保留，但二者都不应提交到 Git。
 - 运行预处理脚本后会在用户本地重新生成 `manifest.csv`、`splits.json` 和 `preprocess_summary.json`；仓库不公开这些能够关联原始 CT 的派生索引，也不保存预处理 `.npy` 数组。
 - 仓库仅发布不含扫描标识与服务器路径的汇总指标、报告和代表性展示图。
+- `verify_project.py` 和 `verify_improved_128.py` 的完整运行需要本地预处理数据和 checkpoint；公开仓库未包含这些大文件，因此克隆仓库后需先完成数据预处理并准备对应最终权重。
 
 ```bash
 python verify_project.py
