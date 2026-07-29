@@ -1,0 +1,15 @@
+{
+  "held_out_split": "test",
+  "held_out_real_count_for_histogram": 767,
+  "nearest_neighbor_training_candidates": 5361,
+  "generated_count": 16,
+  "generated_pixel_mean_normalized": -0.1885337233543396,
+  "generated_pixel_std_normalized": 0.6265979409217834,
+  "real_pixel_mean_normalized": -0.3241623342037201,
+  "real_pixel_std_normalized": 0.6617146730422974,
+  "histogram_total_variation": 0.24515507584911275,
+  "generated_pairwise_mean_absolute_difference": 0.4881469072153171,
+  "nearest_neighbor_mse_mean": 0.19133917056024075,
+  "nearest_neighbor_mse_min": 0.11836999654769897,
+  "nearest_neighbor_mse_max": 0.2976985573768616
+}

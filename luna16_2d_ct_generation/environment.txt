@@ -1,0 +1,15 @@
+# Environment used for the reported AutoDL experiments
+OS/runtime: AutoDL Linux container
+GPU: NVIDIA GeForce RTX 4090 (24564 MiB)
+Python: 3.12.3
+PyTorch: 2.8.0+cu128
+CUDA reported by PyTorch: 12.8
+NumPy: 2.3.2
+SimpleITK: 2.5.5
+PyYAML: 6.0.2
+tqdm: 4.66.2
+matplotlib: 3.10.5
+Pillow: 11.3.0
+
+# PyTorch, torchvision and CUDA came from the preinstalled AutoDL image.
+# requirements.txt intentionally does not reinstall or upgrade them.
