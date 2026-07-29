@@ -1,5 +1,7 @@
 # Biomedical Image Generation Research and LUNA16 Demo
 
+This repository contains literature research and reproducible LUNA16 2D CT diffusion-generation experiments.
+
 本仓库包含两个相互衔接的教学成果：
 
 1. [生物医学图像生成文献综述](deep-research-output/biomedical-image-generation/phase6_report/report.md)：梳理 AE/VAE、GAN、自回归模型、Normalizing Flow 和 Diffusion 等主要生成建模路线。
