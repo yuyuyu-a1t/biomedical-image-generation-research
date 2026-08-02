@@ -14,7 +14,7 @@
 5. 扩散、score-based 与 flow matching/rectified flow；
 6. 物理模型、解剖模拟器与神经生成器的混合路线。
 
-若只求一个便于记忆的版本，可以说传统综述中的三大类是 **VAE、GAN、diffusion**；但严格的方法学分类不应漏掉自回归和 normalizing flow，也不应忽略医学成像中特别重要的物理/数据一致性混合方法 [@singh2021review; @kazerouni2023diffusion; @dayarathna2024deep]。截至 2026 年，**扩散/score/flow 是研究中心**，GAN 仍在快速图像翻译与纹理生成中有价值，VAE/VQ-GAN 常作为潜空间压缩器，自回归和 normalizing flow 是较小但独立的支线；决定临床可信度的关键正从“更逼真”转向“病灶忠实、三维一致、可控、可外部验证”。
+传统综述中的三大类是 **VAE、GAN、diffusion**；但严格的方法学分类不应漏掉自回归和 normalizing flow，也不应忽略医学成像中特别重要的物理/数据一致性混合方法 [@singh2021review; @kazerouni2023diffusion; @dayarathna2024deep]。截至 2026 年，**扩散/score/flow 是研究中心**，GAN 仍在快速图像翻译与纹理生成中有价值，VAE/VQ-GAN 常作为潜空间压缩器，自回归和 normalizing flow 是较小但独立的支线；决定临床可信度的关键正从“更逼真”转向“病灶忠实、三维一致、可控、可外部验证”。
 
 ## 1. 如何正确理解“流派”
 
