@@ -1,6 +1,6 @@
 # LUNA16 二维 CT 扩散生成实验
 
-这是一个面向本科课程汇报的、可复现的二维肺部 CT 无条件生成项目。项目使用 LUNA16 `subset0` 的 89 个 CT 扫描，完成了：
+项目使用 LUNA16 `subset0` 的 89 个 CT 扫描，完成了：
 
 - 64×64、3000-step DDPM baseline；
 - 128×128、10000-step improved experiment；
